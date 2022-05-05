@@ -1,0 +1,15 @@
+html 
+    body 
+        h1= showdata.title 
+        h2 Developed By
+        ul 
+            for dev in showdata.developedBy 
+                li= dev 
+        h2 Starring 
+        ul 
+            for star in showdata.starring 
+                li= star 
+        h2 Seasons 
+        ul 
+            for season in showdata.seasons 
+                li= 'Season ' + season.number
