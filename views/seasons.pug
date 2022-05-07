@@ -1,3 +1,16 @@
 html 
     body 
-        h1 i am here!
+        h1 Kim's Convenience  
+        h2= `Season ${season.number}`
+        table
+            tr 
+                th No.
+                th Title 
+                th Director 
+            tr 
+                for episode in season.episodes
+                    td= episode.number 
+                    td= episode.title 
+                    td= episode.director 
+                    tr 
+                        td(colspan='3')= episode.synopsis 
