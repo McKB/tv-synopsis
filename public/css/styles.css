@@ -1,0 +1,27 @@
+body {
+    margin: 0 10% 10% 10%;
+}
+
+h2 {
+    text-align: center;
+}
+
+table, td, th {
+    border: 1.5px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    background-color: rgb(92, 117, 213);
+    color: white;
+}
+
+.num {
+    text-align: center;
+    width: 18px;
+}
+
+.title, .dir {
+    padding-left: 16px;
+}
