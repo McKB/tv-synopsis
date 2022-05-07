@@ -1,19 +1,19 @@
 html 
-    head 
-        title TV Synopsis
-        link(rel="stylesheet" href="/css/styles.css")
+    include partials/head.pug
     body 
-        h1 Kim's Convenience  
-        h2= `Season ${season.number}`
-        table
-            tr 
-                th No.
-                th Title 
-                th Director 
-            tr 
-                for episode in season.episodes
-                    td(class="num")= episode.number 
-                    td(class="title")= episode.title 
-                    td(class="dir")= episode.director 
-                    tr 
-                        td(colspan='3')= episode.synopsis 
+        div(class="title-div")
+            h1= showdata.title 
+        div(class="table-div")
+            h2(class="season-num")= `Season ${season.number}`
+            table
+                tr 
+                    th No.
+                    th Title 
+                    th Director 
+                tr 
+                    for episode in season.episodes
+                        td(class="num")= episode.number 
+                        td(class="title")= episode.title 
+                        td(class="dir")= episode.director 
+                        tr 
+                            td(colspan='3')= episode.synopsis 
